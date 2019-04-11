@@ -51,16 +51,14 @@ p {
     margin-right: auto;
     width: 50%;    
  }
-
+ </style>
 </head>
 <body>
-    </style>
-    <script>
+
+ <script>
     function validate() {
-        console.log("bullshit");
           if( document.getElementById("password").value == "memphis" && document.getElementById("username").value == "educ300") {
-              console.log("shit");
-                window.location.href = "https://chipmanh.github.io/edtech/classroomcommunity.html"; 
+                window.location.href = "https://chipmanh.github.io/edtech/classroomcommunity.html";
           }
         
     }
@@ -78,10 +76,9 @@ p {
     </a>
     </div>
   <form>
-      <input type="text" name="username" placeholder="Username">
-      <input type="text" name="password" placeholder="Password">
+      <input id="username" type="text" name="username" placeholder="Username">
+      <input id="password" type="text" name="password" placeholder="Password">
       <input type="submit" onclick="validate()">
     </form>
-
 </body>
 
