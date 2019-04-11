@@ -67,9 +67,17 @@ p {
     </a>
     </div>
   <form>
-      <input type="text" name="email" placeholder="Email Address">
+      <input type="text" name="username" placeholder="Username">
       <input type="password" name="password" placeholder="Password">
-      <input type="submit">
+      <input type="submit" onclick="validate()">
     </form>
 
 </body>
+<script>
+    function validate() {
+          if( document.getElementById("password").value == "memphis" && document.getElementById("username").value == "educ300") {
+                window.location.href = 'https://chipmanh.github.io/edtech/classroomcommunity.html'; 
+          }
+        
+    }
+</script>
