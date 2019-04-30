@@ -51,9 +51,18 @@ p {
     margin-right: auto;
     width: 50%;    
  }
-</style>
+ </style>
 </head>
 <body>
+
+ <script>
+    function validate() {
+          if( document.getElementById("password").value == "memphis" && document.getElementById("username").value == "educ300") {
+                window.location.assign("https://chipmanh.github.io/edtech/globalcommunity.html");
+          }
+        
+    }
+</script>
 <h1>global community</h1>
     <div class="bt">
     <a href="https://chipmanh.github.io/edtech/index.html">
@@ -66,6 +75,9 @@ p {
          <button type="button"> <b>global community </b></button>
     </a>
     </div>
-  
-
+  <form>
+      <input id="username" type="text" name="username" placeholder="Username">
+      <input id="password" type="password" name="password" placeholder="Password">
+    </form>
+    <button type="button" onclick="validate()"> <b>submit</b> </button>
 </body>
